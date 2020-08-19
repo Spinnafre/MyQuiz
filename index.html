@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="styles.css" rel="stylesheet">
+  <title>My Quiz</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Inicialmente está com o display none -->
+    <div id="question-container" class="hide">
+      <div class="headerQuestion">
+        <div id="question">Questão</div>
+        <div>
+          Acertos
+          <span class="points">0 </span>
+          /
+          <span class="TotalQuestions">0</span>
+        </div>
+      </div>
+      <div id="answer-buttons" class="btn-container"> </div>
+      <div class="selectedButton hide"></div>
+    </div>
+
+    <div class="resultContainer hide">
+      <div>
+        <strong>Seu resultado no teste</strong>
+        <div class="resultArea">
+          <h3>Total de questões acertadas</h3>
+          <span id="resultPoints"></span>
+          <h1 id="resultStatus"></h1>
+          <img id="img" src="" alt="image" class="imgResult">
+        </div>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="start-btn" class="start-btn btn">Começar logo essa merda!</button>
+      <button id="next-btn" class="next-btn btn hide">Next</button>
+    </div>
+  </div>
+  <script defer src="script.js"></script>
+</body>
+
+</html>

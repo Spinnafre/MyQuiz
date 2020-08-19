@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+:root {
+  --color-text-button:#fafafa;
+  --color-text:#424141;
+  --color-button-primary:#454545;
+  --color-button-primary-dark:#262626;
+  --color-button-correct:#77c95f;
+  --color-button-wrong:#eb5752;
+  --color-buttonText-correct:rgb(137, 235, 186);
+  --color-buttonText-wrong:rgb(228, 126, 113);
+  --color-background:#2F323C;
+  --color-questionBackground:#ededed;
+
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-background);
+  
+}
+button{
+  transition: background-color 0.3s ease;
+}
+
+.headerQuestion{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#question{
+  font-size: 2rem;
+  font-weight: bold;
+  color:var(--color-text);
+}
+.container {
+  width: 800px;
+  max-width: 80%;
+  background-color: var(--color-questionBackground);
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px 2px;
+}
+
+.btn-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  border: 1px solid rgb(154, 154, 156);
+  background-color: var(--color-button-primary);
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-size: 1.4rem;
+  color: var(--color-text-button);
+  outline: none;
+}
+
+.btn:hover {  
+  background-color: var(--color-button-primary-dark);
+}
+
+.btn.correct {
+  background-color: var(--color-button-correct);
+  color: var(--color-text-button);
+}
+
+.btn.wrong {
+  background-color: var(--color-button-wrong);
+  
+}
+
+.start-btn, .next-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+.resultContainer>div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+.resultContainer .resultArea{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+.resultContainer strong{
+  font-size: 3.4rem;
+}
+.imgResult{
+  max-width: 280px;
+  max-height: 320px;
+
+  align-self: center;
+  margin-bottom: 2rem;
+}
+.selectedButton{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:var(--color-text);
+
+}
